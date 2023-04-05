@@ -15,5 +15,5 @@ public partial class User
 
     public string Password { get; set; } = null!;
 
-    public int Type { get; set; }
+    public int Authority { get; set; }
 }

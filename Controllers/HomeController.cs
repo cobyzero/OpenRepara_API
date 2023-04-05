@@ -14,23 +14,23 @@ namespace OpenRepara_API.Controllers
             _context = context;
         }
 
-        [HttpGet("getData")]
-        public List<double> getData() {
+        [HttpGet("getHome")]
+        public List<double> getHome() {
 
             List<double> data = new List<double>();
 
             try
             {
-                data.Add(_context.Clientes.ToList().Count());
-                data.Add(_context.Inventarios.ToList().Count());
-                data.Add(_context.Ordenes.ToList().Count());
+                data.Add(_context.Clients.ToList().Count());
+                data.Add(_context.Inventories.ToList().Count());
+                data.Add(_context.Orders.ToList().Count());
 
-                double precio = 0;
-                foreach (var item in _context.Ventas.ToList())
+                double price = 0;
+                foreach (var item in _context.Sales.ToList())
                 {
-                    precio += item.Price;
+                    price += item.PriceService;
                 }
-                data.Add(precio);
+                data.Add(price);
                 return data;
             }
             catch (Exception)

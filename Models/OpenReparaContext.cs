@@ -15,24 +15,24 @@ public partial class OpenReparaContext : DbContext
     {
     }
 
-    public virtual DbSet<Cliente> Clientes { get; set; }
+    public virtual DbSet<Client> Clients { get; set; }
 
-    public virtual DbSet<Inventario> Inventarios { get; set; }
+    public virtual DbSet<Inventory> Inventories { get; set; }
 
-    public virtual DbSet<Ordene> Ordenes { get; set; }
+    public virtual DbSet<Order> Orders { get; set; }
+
+    public virtual DbSet<Sale> Sales { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
-
-    public virtual DbSet<Venta> Ventas { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=(local);Database=OpenRepara;user id=sa;pwd=infierno;persist security info=False;packet size=4096;Encrypt=false");
-
+ 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Cliente>(entity =>
+        modelBuilder.Entity<Client>(entity =>
         {
+            entity.HasKey(e => e.Id).HasName("PK_Clientes");
+
+            entity.ToTable("Client");
+
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Code)
                 .HasMaxLength(50)
@@ -52,9 +52,11 @@ public partial class OpenReparaContext : DbContext
                 .HasColumnName("number");
         });
 
-        modelBuilder.Entity<Inventario>(entity =>
+        modelBuilder.Entity<Inventory>(entity =>
         {
-            entity.ToTable("Inventario");
+            entity.HasKey(e => e.Id).HasName("PK_Inventario");
+
+            entity.ToTable("Inventory");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Code)
@@ -77,49 +79,111 @@ public partial class OpenReparaContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("model");
-            entity.Property(e => e.Serial)
+            entity.Property(e => e.TypeService)
                 .HasMaxLength(50)
                 .IsUnicode(false)
-                .HasColumnName("serial");
-            entity.Property(e => e.Type)
-                .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("type");
+                .HasColumnName("typeService");
         });
 
-        modelBuilder.Entity<Ordene>(entity =>
+        modelBuilder.Entity<Order>(entity =>
         {
+            entity.HasKey(e => e.Id).HasName("PK_Ordenes");
+
+            entity.ToTable("Order");
+
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.Client)
-                .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("client");
             entity.Property(e => e.Code)
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("code");
-            entity.Property(e => e.Imei)
+            entity.Property(e => e.DateOrder)
+                .HasColumnType("datetime")
+                .HasColumnName("dateOrder");
+            entity.Property(e => e.Dispositive)
                 .HasMaxLength(50)
                 .IsUnicode(false)
-                .HasColumnName("imei");
-            entity.Property(e => e.Marca)
+                .HasColumnName("dispositive");
+            entity.Property(e => e.EmailClient)
                 .HasMaxLength(50)
                 .IsUnicode(false)
-                .HasColumnName("marca");
-            entity.Property(e => e.Model)
+                .HasColumnName("emailClient");
+            entity.Property(e => e.FailDispositive)
                 .HasMaxLength(50)
                 .IsUnicode(false)
-                .HasColumnName("model");
-            entity.Property(e => e.Price)
+                .HasColumnName("failDispositive");
+            entity.Property(e => e.ImeiDispositive)
                 .HasMaxLength(50)
                 .IsUnicode(false)
-                .HasColumnName("price");
+                .HasColumnName("imeiDispositive");
+            entity.Property(e => e.MarcaDispositive)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("marcaDispositive");
+            entity.Property(e => e.ModelDispositive)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("modelDispositive");
+            entity.Property(e => e.NameClient)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("nameClient");
+            entity.Property(e => e.NumberClient)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("numberClient");
+            entity.Property(e => e.Observation)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("observation");
+            entity.Property(e => e.PassDispositive)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("passDispositive");
+            entity.Property(e => e.PinDispositive)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("pinDispositive");
+            entity.Property(e => e.Price).HasColumnName("price");
             entity.Property(e => e.Status).HasColumnName("status");
+            entity.Property(e => e.TypeService)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("typeService");
+        });
+
+        modelBuilder.Entity<Sale>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK_Ventas");
+
+            entity.ToTable("Sale");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.ClientName)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("clientName");
+            entity.Property(e => e.Code)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("code");
+            entity.Property(e => e.DateService)
+                .HasColumnType("datetime")
+                .HasColumnName("dateService");
+            entity.Property(e => e.PriceService).HasColumnName("priceService");
+            entity.Property(e => e.TypeService)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("typeService");
         });
 
         modelBuilder.Entity<User>(entity =>
         {
+            entity.HasKey(e => e.Id).HasName("PK_Users");
+
+            entity.ToTable("User");
+
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Authority).HasColumnName("authority");
             entity.Property(e => e.Email)
                 .HasMaxLength(50)
                 .IsUnicode(false)
@@ -132,32 +196,10 @@ public partial class OpenReparaContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("password");
-            entity.Property(e => e.Type).HasColumnName("type");
             entity.Property(e => e.Username)
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("username");
-        });
-
-        modelBuilder.Entity<Venta>(entity =>
-        {
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.Client)
-                .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("client");
-            entity.Property(e => e.Code)
-                .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("code");
-            entity.Property(e => e.Fecha)
-                .HasColumnType("datetime")
-                .HasColumnName("fecha");
-            entity.Property(e => e.Price).HasColumnName("price");
-            entity.Property(e => e.Type)
-                .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("type");
         });
 
         OnModelCreatingPartial(modelBuilder);
