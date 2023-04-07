@@ -7,7 +7,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArdTZnNCw5UOdip0BqRtezAAAAAACAAAAAAAQZgAAAAEAACAAAACHBzZ+wyT9xBx9tj5laV7DX9LA7WrOKkCA2nweBjLcuAAAAAAOgAAAAAIAACAAAADWBzvAXZFxCvUTFxy+tqDMRlvuknldSd36Sr6ZfBPpTiAAAACFUCqpqAYPgArqPRhHZWi59INjxqYKvHUDaX3ptmDQ4kAAAABMFDjpYzmm9TweFnbziYHh6KnwVhyr5ELNU4Q0+rU7QsEC34qmJsczsMHXz4dz4Brks1/7HMPQ7V67+yCXoS6H</EncryptedPassword>
     <_PublishTargetUrl>ftp://198.37.116.30/www.openrepair.somee.com</_PublishTargetUrl>
-    <History>True|2023-04-05T15:20:20.8385659Z;True|2023-04-05T10:06:26.0746219-05:00;True|2023-04-05T09:54:52.9447649-05:00;True|2023-04-05T07:45:30.1463253-05:00;</History>
+    <History>True|2023-04-07T03:01:38.1391941Z;True|2023-04-05T10:20:20.8385659-05:00;True|2023-04-05T10:06:26.0746219-05:00;True|2023-04-05T09:54:52.9447649-05:00;True|2023-04-05T07:45:30.1463253-05:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -22,6 +22,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Azure.Identity.dll">
       <publishTime>04/05/2022 15:26:00</publishTime>
+    </File>
+    <File Include="de-DE/Faker.Net.6.0.resources.dll">
+      <publishTime>12/31/2021 06:15:42</publishTime>
+    </File>
+    <File Include="Faker.Net.6.0.dll">
+      <publishTime>12/31/2021 06:15:42</publishTime>
     </File>
     <File Include="Microsoft.Bcl.AsyncInterfaces.dll">
       <publishTime>04/14/2020 17:39:12</publishTime>
@@ -99,19 +105,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/19/2020 13:40:26</publishTime>
     </File>
     <File Include="OpenRepara_API.deps.json">
-      <publishTime>04/05/2023 10:17:39</publishTime>
+      <publishTime>04/06/2023 21:58:44</publishTime>
     </File>
     <File Include="OpenRepara_API.dll">
-      <publishTime>04/05/2023 10:17:36</publishTime>
+      <publishTime>04/06/2023 21:58:39</publishTime>
     </File>
     <File Include="OpenRepara_API.exe">
-      <publishTime>04/05/2023 10:17:36</publishTime>
+      <publishTime>04/06/2023 21:58:39</publishTime>
     </File>
     <File Include="OpenRepara_API.pdb">
-      <publishTime>04/05/2023 10:17:36</publishTime>
+      <publishTime>04/06/2023 21:58:39</publishTime>
     </File>
     <File Include="OpenRepara_API.runtimeconfig.json">
-      <publishTime>04/05/2023 07:42:29</publishTime>
+      <publishTime>04/06/2023 21:58:41</publishTime>
     </File>
     <File Include="runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll">
       <publishTime>10/18/2022 11:40:14</publishTime>
@@ -183,7 +189,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/19/2020 13:53:38</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>04/05/2023 10:17:39</publishTime>
+      <publishTime>04/06/2023 21:58:44</publishTime>
     </File>
   </ItemGroup>
 </Project>

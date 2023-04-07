@@ -80,3 +80,5 @@ C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\refint\OpenR
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\OpenRepara_API.pdb
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\OpenRepara_API.genruntimeconfig.cache
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\ref\OpenRepara_API.dll
+C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\bin\Release\net6.0\Faker.Net.6.0.dll
+C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\bin\Release\net6.0\de-DE\Faker.Net.6.0.resources.dll

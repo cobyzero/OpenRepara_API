@@ -134,5 +134,42 @@ namespace OpenRepara_API.Controllers
                 throw;
             }
         }
+
+        public async Task addOrderFake(Order ordene)
+        {
+            try
+            { 
+                     _context.Orders.Add(ordene!);
+                 
+                    if (_context.Clients.Where((t) => t.Code == ordene!.Code).ToList().Count() == 0)
+                    {
+                        _context.Clients.Add(new Client()
+                        {
+                            Code = ordene!.Code,
+                            Name = ordene.NameClient,
+                            Email = ordene.EmailClient,
+                            Number = ordene.NumberClient,
+                        });
+                    }
+
+                    _context.Inventories.Add(new Inventory()
+                    {
+                        Code = ordene!.Code,
+                        Marca = ordene.MarcaDispositive,
+                        Model = ordene.ModelDispositive,
+                        Imei = ordene.ImeiDispositive,
+                        Description = ordene.FailDispositive,
+                        TypeService = ordene.Dispositive
+                    });
+
+                    await _context.SaveChangesAsync();
+                
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

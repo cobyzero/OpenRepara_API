@@ -6,6 +6,7 @@ C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\O
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\OpenRepara_API.pdb
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\Azure.Core.dll
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\Azure.Identity.dll
+C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\Faker.Net.6.0.dll
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
@@ -41,6 +42,7 @@ C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\S
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\System.Text.Encodings.Web.dll
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\System.Text.Json.dll
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\System.Windows.Extensions.dll
+C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\de-DE\Faker.Net.6.0.resources.dll
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\edyne\Desktop\OpenRepara\OpenRepara_API\obj\Release\net6.0\PubTmp\Out\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll

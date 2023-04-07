@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "OBf7kRs20kiEuaMizGNkNoRvn6P+gzthHvA/kEgZdYsEkW7bqjDQVUi9hpqxs561QvxdEmh/j8gsww4AjEKU7A==",
+  "dgSpecHash": "DwnTIvn8/jtwd+jvF3qn1+0A7fzUKmus2hDeaTX3i2jFwTkB3BxPLgV2qjB0KPgTcnRE//X18jdQKTwBVZLAkQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\edyne\\Desktop\\OpenRepara\\OpenRepara_API\\OpenRepara_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edyne\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\edyne\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\edyne\\.nuget\\packages\\faker.net\\2.0.154\\faker.net.2.0.154.nupkg.sha512",
     "C:\\Users\\edyne\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\edyne\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\edyne\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -42,6 +43,7 @@
     "C:\\Users\\edyne\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\edyne\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\edyne\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\edyne\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\edyne\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\edyne\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\edyne\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

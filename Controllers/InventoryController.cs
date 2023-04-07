@@ -61,7 +61,7 @@ namespace OpenRepara_API.Controllers
         }
 
          
-        [HttpDelete("deleteInventoryForCode")]
+        [HttpDelete("deleteInventory")]
         public async Task deleteInventoryForCode()
         {
             try
